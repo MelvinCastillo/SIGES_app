@@ -1,0 +1,15 @@
+Conexiones CAID-SD
+
+Servidores:
+172.16.150.11 PRO
+172.16.150.12 DEV
+
+Instancia SQL
+
+CAIDSD
+
+Usuario			Clave
+---------------------------------
+sa			P@$$w0rD
+sqladmin		P@$$w0rD
+sqldev			P@$$w0rD

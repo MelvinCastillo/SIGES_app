@@ -1,0 +1,21 @@
+--Exp. 2985 Emil Isaac Aybar Calzado, no. Factura FT066788.
+--Exp.2991 Keisha Fernada Garrido De La Rosa, no. Factura FT0668805.
+
+FTX00000R2 @FECHA1 = '05/28/2019', @FECHA2 = '05/28/2019',@ROWSGXID = 'CAID-SD',@RECORD = '2991',@USRID = 'CAID-SD'
+-- sp_helptext 'FTX00000R2'
+
+
+select top 100 * from FTX00000_D  where ROWSGXID='CAID-SD'
+
+select m.* 
+FROM	FTX00000 M
+
+		JOIN FTX00000_D D ON M.ROWGUID = D.FACTURAID AND M.ROWSGXID = D.ROWSGXID
+		and m.NUMERO='FT066805' 
+		and m.ROWSGXID='CAID-SD'
+
+select * from FTX00000_D where FACTURAID='82557857-B71D-4CA4-9DF4-5C895B628D77' and ROWSGXID= 'CAID-SD'
+
+eñe
+
+829-421-4658

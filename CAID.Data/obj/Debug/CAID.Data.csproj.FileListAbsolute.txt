@@ -1,0 +1,5 @@
+C:\MC\SIGES\Fuentes\CAID.Data\bin\Debug\CAID.Data.dll
+C:\MC\SIGES\Fuentes\CAID.Data\bin\Debug\CAID.Data.pdb
+C:\MC\SIGES\Fuentes\CAID.Data\obj\Debug\CAID.Data.csprojResolveAssemblyReference.cache
+C:\MC\SIGES\Fuentes\CAID.Data\obj\Debug\CAID.Data.dll
+C:\MC\SIGES\Fuentes\CAID.Data\obj\Debug\CAID.Data.pdb

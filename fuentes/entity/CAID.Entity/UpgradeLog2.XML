@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CAID.Entity">
+</Property><Property Name="Solution File" Value="C:\MC\SIGES\Fuentes\fuentes\entity\CAID.Entity\CAID.Entity.sln">
+</Property><Property Name="Date" Value="Saturday, June 10, 2017">
+</Property><Property Name="Time" Value="8:27 AM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="CAID.Entity.sln" Description="File successfully backed up as C:\MC\SIGES\Fuentes\fuentes\entity\CAID.Entity\Backup1\CAID.Entity.sln">
+</Event><Event ErrorLevel="0" Project="CAID.Entity" Source="CAID.Entity.csproj" Description="Project file successfully backed up as C:\MC\SIGES\Fuentes\fuentes\entity\CAID.Entity\Backup1\CAID.Entity.csproj">
+</Event><Event ErrorLevel="0" Project="CAID.Entity" Source="PAX00200.cs" Description="File successfully backed up as C:\MC\SIGES\Fuentes\fuentes\entity\CAID.Entity\Backup1\PAX00200.cs">
+</Event><Event ErrorLevel="0" Project="CAID.Entity" Source="CURRENTUSR.cs" Description="File successfully backed up as C:\MC\SIGES\Fuentes\fuentes\entity\CAID.Entity\Backup1\CURRENTUSR.cs">
+</Event><Event ErrorLevel="0" Project="CAID.Entity" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\MC\SIGES\Fuentes\fuentes\entity\CAID.Entity\Backup1\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="CAID.Entity" Source="CAID.Entity.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CAID.Entity" Source="CAID.Entity.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CAID.Entity.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="CAID.Entity.sln" Description="No Conversion Required">
+</Event></UpgradeLog>

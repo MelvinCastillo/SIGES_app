@@ -1,0 +1,146 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
+    CodeBehind="HCL00024.aspx.cs" Inherits="CAID.HCL00024" %>
+
+<%--Acto Médico: Notas de Evolución--%>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="row-fluid">
+        <asp:Repeater ID="rpPaxHeader" runat="server">
+            <ItemTemplate>
+                <%# Eval("HTML")%>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="box box-bordered">
+                <div class="box-title">
+                    <h3 runat="server" id="lblEvaluacion">
+                        <i class="icon-edit"></i>Evaluación de Seguimiento</h3>
+                    <div class="actions">
+                        <a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="box-content nopadding">
+                        <div class='form-horizontal form-bordered'>
+                            <%-- Tipo de Evaluación --%>
+                            <div class="control-group">
+                                <label for="cmbObjetivo" class="control-label">
+                                    Especialidad</label>
+                                <div class="controls">
+                                    <select runat="server" id="cmbTipo" name="cmbTipo" class='select2-me input-block-level'
+                                        data-rule-required="true">
+                                        <option value="">-- SELECCIONE --</option>
+                                    </select>
+                                    <br />
+                                    <asp:RequiredFieldValidator ControlToValidate="cmbTipo" Display="Dynamic" ErrorMessage="Requerido!"
+                                        ID="cmbTipo1" runat="server" SetFocusOnError="True" ValidationGroup="pnlData" />
+                                </div>
+                            </div>
+                            <%-- Objetivo --%>
+                            <div class="control-group">
+                                <label for="cmbObjetivo" class="control-label">
+                                    Tareas</label>
+                                <div class="controls">
+                                    <select runat="server" id="cmbObjetivo" name="cmbObjetivo" class='select2-me input-block-level'
+                                        data-rule-required="true">
+                                        <option value="">-- SELECCIONE --</option>
+                                    </select>
+                                    <br />
+                                    <asp:RequiredFieldValidator ControlToValidate="cmbObjetivo" Display="Dynamic" ErrorMessage="Requerido!"
+                                        ID="cmbObjetivo1" runat="server" SetFocusOnError="True" ValidationGroup="pnlData" />
+                                </div>
+                            </div>
+
+
+                            <%-- Evaluacion --%>
+                            <div class="control-group">
+                                <label for="cmbEvaluacion" class="control-label">
+                                    Evaluación</label>
+                                <div class="controls">
+                                    <select runat="server" id="cmbEvaluacion" name="cmbEvaluacion" class='select2-me input-block-level'
+                                        data-rule-required="true">
+                                        <option value="">-- SELECCIONE --</option>
+                                        <option value="LO HIZO CORRECTAMENTE">LO HIZO CORRECTAMENTE</option>
+                                        <option value="LO HIZO CON AYUDA">LO HIZO CON AYUDA</option>
+                                        <option value="NO LO HIZO">NO LO HIZO</option>
+                                    </select>
+                                    <br />
+                                    <asp:RequiredFieldValidator ControlToValidate="cmbEvaluacion" Display="Dynamic" ErrorMessage="Requerido!"
+                                        ID="valcmbEvaluacion" runat="server" SetFocusOnError="True" ValidationGroup="pnlData" />
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="cmbObjetivo" class="control-label">
+                                    Comentarios</label>
+                                <div class="controls">
+                                    <asp:TextBox ID="txtEVALUACION" runat="server" TextMode="MultiLine" Height="100px"
+                                        ValidationGroup="pnlData" Wrap="true" placeholder="Comentarios" CssClass="input-block-level"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" id="btnSave" runat="server" onserverclick="_Save" class="btn btn-blue"
+                                    validationgroup="pnlData">
+                                    <i class="icon-save"></i>&nbsp Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="box  box-bordered">
+                <div class="box-title">
+                    <h3>
+                        <i class="icon-table"></i>Histórico
+                    </h3>
+                    <div class="actions">
+                        <a href="#" class="btn btn-mini content-slideUp"><i class="icon-angle-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="box-content nopadding">
+
+                    <table class="table table-hover table-nomargin table-striped dataTable dataTable-grouping dataTable-noheader dataTable-scroll-x" data-grouping="expandable">
+                        <thead>
+                            <tr>
+                                <th>No.
+                                </th>
+                                <th>Fecha y Hora
+                                </th>
+                                <th>Evaluación
+                                </th>
+                                <th>Comentarios
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <asp:Repeater ID="rpHistorico" runat="server">
+                                <ItemTemplate>
+                                    <tr>
+                                        <th>
+                                            <%# Eval("ACTIVIDAD")%>
+                                        </td>
+                                            <td>
+                                            <%# Eval("FECHA")%>&nbsp<%# Eval("HORA")%>
+                                            </td>
+                                        <td>
+                                            <%# Eval("RESULTADO_ACTIVIDAD")%>
+                                        </td>
+                                        <td>
+                                            <%# Eval("DATOS")%>
+                                        </td>
+                                    </tr>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>

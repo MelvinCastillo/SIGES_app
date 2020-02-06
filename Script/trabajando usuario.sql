@@ -1,0 +1,39 @@
+USE [CAID]
+GO
+
+ 
+--ALTER PROC [dbo].[SGX00100S4]
+--	@ROWSGXID	varchar(50) = '%%',
+--	@TERID		varchar(50) = '%%'
+--AS
+SELECT  U.*,	T.ESPECIALIDADID,
+		E.NOMBRE ESPECIALIDADNOMBRE 
+FROM	SGX00100 U
+		INNER JOIN SMX00300 T ON U.TERID = T.ROWGUID
+		INNER JOIN SMX30013 E ON T.ESPECIALIDADID = E.ROWGUID
+WHERE	 E.NOMBRE LIKE '%fact%' 
+
+--AND
+--U.ROWSGXID= 'CAID-SD-SA' and 
+--u.nombre like '%santo%'
+--and u.usr = ''
+-- and e.NOMBRE like '%fact%'
+order by e.NOMBRE
+--U.TERID = '3B65EBEE-3081-46EC-95F0-FC296D236F9C'
+--		AND U.ROWSGXID = 'CAID-SD'
+
+
+--select * from SGX00100 where usr= 'r.martinez'
+
+
+GO
+
+-- UPDATE SGX00100 SET  PWRD = 'MTIzNDU2'
+-- SELECT * FROM	SGX00100  where usr = 'M.CASTILLO'
+--SELECT * FROM SMX00300
+--SELECT * FROM SMX30013
+
+ 
+
+
+ 

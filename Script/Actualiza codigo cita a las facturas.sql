@@ -1,0 +1,63 @@
+
+ SELECT	  
+ 		m.ROWGUID VISITAGUID,
+ 	f.REFVISITAGUID
+
+-- update f set f.REFVISITAGUID = m.ROWGUID
+ 
+FROM	PAX20101 m
+
+		INNER JOIN PAX00000 d ON m.RECORDID = d.RECORDID AND m.ROWSGXID = d.ROWSGXID
+
+		LEFT JOIN PAX00200 ca ON ca.ROWGUID = d.CATEGORIAID 
+
+		LEFT JOIN FTX00000 f ON d.ROWGUID = f.REFGUID AND d.ROWSGXID = f.ROWSGXID AND m.ROWGUID = f.REFVISITAGUID
+
+--		LEFT JOIN FTX00000_D fd ON f.ROWGUID = fd.FACTURAID
+
+WHERE	CONVERT(DATETIME,CONVERT(VARCHAR(10),m.ROWCDTE,101)) = '08/09/2017'
+		AND m.RECORDID > 0
+		AND m.ROWSGXID = 'CAID-STG'
+
+------------------------------------------------------------------------------------------------------
+
+
+SELECT	 
+
+		m.RECORDID,
+
+		m.PACIENTEDET,
+
+		
+		m.ROWGUID VISITAGUID,
+		f.REFVISITAGUID,
+		m.ROWGUID,
+		d.ROWGUID PACIENTEGUID,
+
+		ISNULL(f.ROWGUID,'') as FTGUID,
+
+		ISNULL(f.NUMERO,'') as FTNUMERO,
+
+		ISNULL(f.ROWIDX,-1) as FTIDX,
+
+		
+		xFactura = CASE ISNULL(f.ROWGUID,'') WHEN '' THEN 1 ELSE 0 END,
+
+		xAcciones = CASE ISNULL(f.ROWGUID,'') WHEN '' THEN 'Crear Factura' ELSE 'Imprimir' END
+
+	, substring(isnull((select top 1  sm.observacion from  SMX00500 sm where sm.refguid = d.ROWGUID and sm.ROWSGXID = m.ROWSGXID and cast(sm.fechaini as date) = cast(m.ROWCDTE as date) and isnull(sm.observacion,'') != '' ),''),1,60) as ComentarioDeptoCita
+
+FROM	PAX20101 m
+
+		INNER JOIN PAX00000 d ON m.RECORDID = d.RECORDID AND m.ROWSGXID = d.ROWSGXID
+
+		LEFT JOIN PAX00200 ca ON ca.ROWGUID = d.CATEGORIAID 
+
+		LEFT JOIN FTX00000 f ON d.ROWGUID = f.REFGUID AND d.ROWSGXID = f.ROWSGXID AND m.ROWGUID = f.REFVISITAGUID
+
+--		LEFT JOIN FTX00000_D fd ON f.ROWGUID = fd.FACTURAID
+
+WHERE	CONVERT(DATETIME,CONVERT(VARCHAR(10),m.ROWCDTE,101)) = '08/09/2017'
+		AND m.RECORDID > 0
+		AND m.ROWSGXID = 'CAID-STG'
+ORDER	BY m.PACIENTEDET

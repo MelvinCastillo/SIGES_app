@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\user\Desktop\CAID.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CA866B9-86FA-40A1-81F8-F9896BE6E8BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CAID</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>CAID</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine" />
+    <Reference Include="System" />
+    <Reference Include="CrystalDecisions.ReportSource" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Data" />
+    <Reference Include="CrystalDecisions.Shared" />
+    <Reference Include="CrystalDecisions.Web" />
+    <Reference Include="CAID.Data">
+      <HintPath>lib\CAID.Data - Copy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FTX00000_A.cs" />
+    <Compile Include="HCL00039R3.cs" />
+    <Compile Include="PAX00000_A.cs" />
+    <Compile Include="HCL00039R1.cs" />
+    <Compile Include="HCL00043.cs" />
+    <Compile Include="EME00001.cs" />
+    <Compile Include="HCL00000R3.cs" />
+    <Compile Include="HCL00040.cs" />
+    <Compile Include="HCL00039.cs" />
+    <Compile Include="HCL00041.cs" />
+    <Compile Include="HCL00042.cs" />
+    <Compile Include="HCL00044.cs" />
+    <Compile Include="HCX00311.cs" />
+    <Compile Include="PAX00102R1.cs" />
+    <Compile Include="HCL00038.cs" />
+    <Compile Include="HCL00037.cs" />
+    <Compile Include="HCL00036R1.cs" />
+    <Compile Include="FTX20100.cs" />
+    <Compile Include="HCL00010O.cs" />
+    <Compile Include="HCL00028.cs" />
+    <Compile Include="HCL00031.cs" />
+    <Compile Include="HCL00033.cs" />
+    <Compile Include="HCL00034.cs" />
+    <Compile Include="HCL00036.cs" />
+    <Compile Include="HCL00035.cs" />
+    <Compile Include="HCL00032.cs" />
+    <Compile Include="HCL00029.cs" />
+    <Compile Include="HCL00022.cs" />
+    <Compile Include="HCL00026.cs" />
+    <Compile Include="HCL00027.cs" />
+    <Compile Include="HCL00024.cs" />
+    <Compile Include="HCL00023.cs" />
+    <Compile Include="HCL00021.cs" />
+    <Compile Include="HCL00020.cs" />
+    <Compile Include="HCL00025.cs" />
+    <Compile Include="HCX00600.cs" />
+    <Compile Include="HCX00500.cs" />
+    <Compile Include="HCX00310.cs" />
+    <Compile Include="PAX00101.cs" />
+    <Compile Include="HCL00004.cs" />
+    <Compile Include="HCL00006.cs" />
+    <Compile Include="HCL00007.cs" />
+    <Compile Include="HCL00008.cs" />
+    <Compile Include="HCL00018.cs" />
+    <Compile Include="HCL00019.cs" />
+    <Compile Include="PAX00102.cs" />
+    <Compile Include="PAX00800.cs" />
+    <Compile Include="PAX20101R3.cs" />
+    <Compile Include="ReporteMetricas.cs" />
+    <Compile Include="FTX00000R2.cs" />
+    <Compile Include="SMX00600_A.cs" />
+    <Compile Include="SMX00600.cs" />
+    <Compile Include="SMX00503.cs" />
+    <Compile Include="SMX00502.cs" />
+    <Compile Include="FTX00000_DR1.cs" />
+    <Compile Include="SMX10050.cs" />
+    <Compile Include="SMX00501.cs" />
+    <Compile Include="Free_Master.cs" />
+    <Compile Include="PAX20101R1.cs" />
+    <Compile Include="PAX20101R2.cs" />
+    <Compile Include="FTX10103.cs" />
+    <Compile Include="HCL00000R2.cs" />
+    <Compile Include="HCL00012.cs" />
+    <Compile Include="HCL00011.cs" />
+    <Compile Include="HCL00010.cs" />
+    <Compile Include="HCL00013.cs" />
+    <Compile Include="HCL00000R1.cs" />
+    <Compile Include="HCL99999.cs" />
+    <Compile Include="HCL00005.cs" />
+    <Compile Include="HCL00017.cs" />
+    <Compile Include="HCL00000.cs" />
+    <Compile Include="HCL00016.cs" />
+    <Compile Include="HCL00015.cs" />
+    <Compile Include="HCL00009.cs" />
+    <Compile Include="HCL00003.cs" />
+    <Compile Include="HCL00002.cs" />
+    <Compile Include="FTX10100.cs" />
+    <Compile Include="FTX00000_N.cs" />
+    <Compile Include="FTX00000_P.cs" />
+    <Compile Include="SMX00530.cs" />
+    <Compile Include="PAX00100_MC.cs" />
+    <Compile Include="PAX00700.cs" />
+    <Compile Include="SGX00000R90.cs" />
+    <Compile Include="SGX00004.cs" />
+    <Compile Include="SGX00103.cs" />
+    <Compile Include="SMX30020F.cs" />
+    <Compile Include="SMX30024.cs" />
+    <Compile Include="HCL00001.cs" />
+    <Compile Include="INDEX_T.cs" />
+    <Compile Include="PAX00300_E.cs" />
+    <Compile Include="PAX20100R2.cs" />
+    <Compile Include="PAX20100R3.cs" />
+    <Compile Include="PAX40100.cs" />
+    <Compile Include="PREVIEW.cs" />
+    <Compile Include="SGX00000RG.cs" />
+    <Compile Include="SitePreview.cs" />
+    <Compile Include="forget.cs" />
+    <Compile Include="FTX30002.cs" />
+    <Compile Include="HCL00014.cs" />
+    <Compile Include="FTX30001.cs" />
+    <Compile Include="FTX00000.cs" />
+    <Compile Include="HCX00001.cs" />
+    <Compile Include="HCX00400.cs" />
+    <Compile Include="SGX00100_U.cs" />
+    <Compile Include="SMX00500.cs" />
+    <Compile Include="SMX00510.cs" />
+    <Compile Include="SMX00520.cs" />
+    <Compile Include="SMX30020.cs" />
+    <Compile Include="HCX00300.cs" />
+    <Compile Include="PAX00100_GR1.cs" />
+    <Compile Include="PAX00000R1.cs" />
+    <Compile Include="SitePrint.cs" />
+    <Compile Include="SMX30018.cs" />
+    <Compile Include="PAX20101.cs" />
+    <Compile Include="PAX00400.cs" />
+    <Compile Include="PAX00100.cs" />
+    <Compile Include="PAX00300.cs" />
+    <Compile Include="PAX00500.cs" />
+    <Compile Include="SMX30017.cs" />
+    <Compile Include="ERR00100.cs" />
+    <Compile Include="ERR00200.cs" />
+    <Compile Include="ERR00404.cs" />
+    <Compile Include="PAX20100.cs" />
+    <Compile Include="SGX00100_P.cs" />
+    <Compile Include="SMX00003.cs" />
+    <Compile Include="SMX00004.cs" />
+    <Compile Include="SMX00005.cs" />
+    <Compile Include="SMX00200.cs" />
+    <Compile Include="SMX00201.cs" />
+    <Compile Include="SMX00202.cs" />
+    <Compile Include="SMX30016.cs" />
+    <Compile Include="SGX00002.cs" />
+    <Compile Include="SGX00000.cs" />
+    <Compile Include="SGX00003.cs" />
+    <Compile Include="SGX00100.cs" />
+    <Compile Include="login.cs" />
+    <Compile Include="logoff.cs" />
+    <Compile Include="SGX00001.cs" />
+    <Compile Include="_default.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="index.cs" />
+    <Compile Include="PAX00000.cs" />
+    <Compile Include="PAX00100_G.cs" />
+    <Compile Include="PAX00100_P.cs" />
+    <Compile Include="PAX00200.cs" />
+    <Compile Include="SGX00102.cs" />
+    <Compile Include="Site_Master.cs" />
+    <Compile Include="SMX00001.cs" />
+    <Compile Include="SMX00002.cs" />
+    <Compile Include="SMX00101.cs" />
+    <Compile Include="SMX00300.cs" />
+    <Compile Include="SMX30001.cs" />
+    <Compile Include="SMX30002.cs" />
+    <Compile Include="SMX30003.cs" />
+    <Compile Include="SMX30004.cs" />
+    <Compile Include="SMX30005.cs" />
+    <Compile Include="SMX30006.cs" />
+    <Compile Include="SMX30007.cs" />
+    <Compile Include="SMX30008.cs" />
+    <Compile Include="SMX30009.cs" />
+    <Compile Include="SMX30010.cs" />
+    <Compile Include="SMX30011.cs" />
+    <Compile Include="SMX30012.cs" />
+    <Compile Include="SMX30013.cs" />
+    <Compile Include="SMX30014.cs" />
+    <Compile Include="SMX30015.cs" />
+    <Compile Include="SMX30021.cs" />
+    <Compile Include="SMX30022.cs" />
+    <Compile Include="SMX30023.cs" />
+    <Compile Include="SMX30025E.cs" />
+    <Compile Include="SMX30025V.cs" />
+    <Compile Include="SMX30026.cs" />
+    <Compile Include="SMX30027.cs" />
+    <Compile Include="SMX30028.cs" />
+    <Compile Include="SMX30050.cs" />
+    <Compile Include="SMX30051.cs" />
+    <Compile Include="WebForm3.cs" />
+    <Compile Include="reports\HCX00300R1.cs" />
+    <Compile Include="reports\CachedHCX00300R1.cs" />
+    <Compile Include="reports\HCL00039R1.cs" />
+    <Compile Include="reports\CachedHCL00039R1.cs" />
+    <Compile Include="reports\FTX00000R3.cs" />
+    <Compile Include="reports\CachedFTX00000R3.cs" />
+    <Compile Include="reports\FTX00000R2.cs" />
+    <Compile Include="reports\CachedFTX00000R2.cs" />
+    <Compile Include="reports\FTX10100R1.cs" />
+    <Compile Include="reports\CachedFTX10100R1.cs" />
+    <Compile Include="reports\HCL00000R10.cs" />
+    <Compile Include="reports\CachedHCL00000R10.cs" />
+    <Compile Include="reports\HCL00027R2.cs" />
+    <Compile Include="reports\CachedHCL00027R2.cs" />
+    <Compile Include="reports\HCL00036R2.cs" />
+    <Compile Include="reports\CachedHCL00036R2.cs" />
+    <Compile Include="reports\HCL00036R1.cs" />
+    <Compile Include="reports\CachedHCL00036R1.cs" />
+    <Compile Include="reports\HCL00026R1.cs" />
+    <Compile Include="reports\CachedHCL00026R1.cs" />
+    <Compile Include="reports\HCL00039R3.cs" />
+    <Compile Include="reports\CachedHCL00039R3.cs" />
+    <Compile Include="reports\HCL00044R1.cs" />
+    <Compile Include="reports\CachedHCL00044R1.cs" />
+    <Compile Include="reports\PAX00102R1.cs" />
+    <Compile Include="reports\CachedPAX00102R1.cs" />
+    <Compile Include="reports\PAX00300R1.cs" />
+    <Compile Include="reports\CachedPAX00300R1.cs" />
+    <Compile Include="reports\HCL00039R2.cs" />
+    <Compile Include="reports\CachedHCL00039R2.cs" />
+    <Compile Include="reports\SMX00500R1.cs" />
+    <Compile Include="reports\CachedSMX00500R1.cs" />
+    <Compile Include="reports\FTX00000R1.cs" />
+    <Compile Include="reports\CachedFTX00000R1.cs" />
+    <Compile Include="reports\SGX00000RG2.cs" />
+    <Compile Include="reports\CachedSGX00000RG2.cs" />
+    <Compile Include="reports\SGX00000RG.cs" />
+    <Compile Include="reports\CachedSGX00000RG.cs" />
+    <Compile Include="reports\HCX00002R1.cs" />
+    <Compile Include="reports\CachedHCX00002R1.cs" />
+    <Compile Include="reports\PAX20100R2.cs" />
+    <Compile Include="reports\CachedPAX20100R2.cs" />
+    <Compile Include="reports\PAX20100R3.cs" />
+    <Compile Include="reports\CachedPAX20100R3.cs" />
+    <Compile Include="Charts\graphics.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="reports\FTX00000R1.rpt" />
+    <EmbeddedResource Include="reports\FTX00000R2.rpt" />
+    <EmbeddedResource Include="reports\FTX00000R3.rpt" />
+    <EmbeddedResource Include="reports\FTX10100R1.rpt" />
+    <EmbeddedResource Include="reports\HCL00000R10.rpt" />
+    <EmbeddedResource Include="reports\HCL00026R1.rpt" />
+    <EmbeddedResource Include="reports\HCL00027R2.rpt" />
+    <EmbeddedResource Include="reports\HCL00036R1.rpt" />
+    <EmbeddedResource Include="reports\HCL00036R2.rpt" />
+    <EmbeddedResource Include="reports\HCL00039R1.rpt" />
+    <EmbeddedResource Include="reports\HCL00039R2.rpt" />
+    <EmbeddedResource Include="reports\HCL00039R3.rpt" />
+    <EmbeddedResource Include="reports\HCL00044R1.rpt" />
+    <EmbeddedResource Include="reports\HCX00002R1.rpt" />
+    <EmbeddedResource Include="reports\HCX00300R1.rpt" />
+    <EmbeddedResource Include="reports\PAX00102R1.rpt" />
+    <EmbeddedResource Include="reports\PAX00300R1.rpt" />
+    <EmbeddedResource Include="reports\PAX20100R2.rpt" />
+    <EmbeddedResource Include="reports\PAX20100R3.rpt" />
+    <EmbeddedResource Include="reports\SGX00000RG.rpt" />
+    <EmbeddedResource Include="reports\SGX00000RG2.rpt" />
+    <EmbeddedResource Include="reports\SMX00500R1.rpt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
