@@ -1,0 +1,1 @@
+Comprehensive Management System for disability, in which the therapies can be managed for children, family therapy, social skills, behavioral therapy, nutritional, group interventions, social service, patient information, billing, health insurance management
